@@ -3,6 +3,17 @@
 
 // HTML Setup:
 // <canvas id="gameCanvas" width="800" height="600" style="border:1px solid black;"></canvas>
+/*
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        this.navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            console.log('Service Worker registered with scope:', registration.scope);
+        }, function(err) {
+            console.log('Service Worker registration failed:',err);
+        });
+    });
+}
+*/
 
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
